@@ -77,7 +77,6 @@ def main(): #takes inputs and uses the functions in tandem to create a final out
     CardBalance = float(input("Enter digital card balance (Rp): "))
     entrycorrect, entrydistance = checkifisinlist(entry_station)
     exitcorrect, exitdistance = checkifisinlist(exit_station)
-    print(entrycorrect, exitcorrect)
     if entrycorrect and exitcorrect:
         distance = abs(entrydistance - exitdistance)
         total_fare = FareCalculation(distance)
