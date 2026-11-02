@@ -54,7 +54,7 @@ def SaveTransactionRecord(entry_station, exit_station, distance, total_fare, pay
 def printavailablestations():
     for station, distance in route:
        print("Available Stations")
-       print(f" Stasiun: {station} - Distance: {distance} KM")
+       print(f" Station: {station} - Distance: {distance} KM")
 
 def checkifisinlist(StationChecked):
     returnvalue = False, 0
