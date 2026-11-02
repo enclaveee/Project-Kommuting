@@ -79,7 +79,7 @@ def main(): #takes inputs and uses the functions in tandem to create a final out
     exitcorrect, exitdistance = checkifisinlist(exit_station)
     print(entrycorrect, exitcorrect)
     if entrycorrect and exitcorrect:
-        distance = entrydistance + exitdistance
+        distance = abs(entrydistance - exitdistance)
         total_fare = FareCalculation(distance)
         print(f"Trip Fare: RP {total_fare:,.0f}")
         payment_success, new_balance = paymentprocessing(CardBalance, total_fare)
